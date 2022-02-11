@@ -1,0 +1,34 @@
+﻿<Window x:Name="MainForm" x:Class="Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="star.png">
+    <Grid Background="#FF16CA32">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Foreground="White" FontFamily="Segoe Print" FontSize="48" FontStretch="UltraCondensed" FontWeight="Bold" HorizontalAlignment="Center">Main Window</Label>
+
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="MoveToWin1Btn" Grid.Row="0" Grid.Column="0" Background="Green" Margin="15" Click="MoveToWin1Btn_Click" FontFamily="Segoe Print" FontSize="36" Foreground="White" FontWeight="Bold">Info</Button>
+            <Button x:Name="MoveToWin2Btn" Grid.Row="0" Grid.Column="1" Background="Green" Margin="15" Click="MoveToWin2Btn_Click" FontFamily="Segoe Print" FontSize="36" Foreground="White" FontWeight="Bold">Students Database</Button>
+            <Button x:Name="MoveToWin3Btn" Grid.Row="1" Grid.Column="0" Background="Green" Margin="15" Click="MoveToWin3Btn_Click" FontFamily="Segoe Print" FontSize="36" Foreground="White" FontWeight="Bold">Tic-Tac-Toe</Button>
+            <Button x:Name="MoveToWin4Btn" Grid.Row="1" Grid.Column="1" Background="Green" Margin="15" Click="MoveToWin4Btn_Click" FontFamily="Segoe Print" FontSize="36" Foreground="White" FontWeight="Bold">Calculator</Button>
+        </Grid>
+    </Grid>
+</Window>
