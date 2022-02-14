@@ -130,9 +130,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="msg555552535-12152.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="tictactoe.png" />
   </ItemGroup>
   <ItemGroup>

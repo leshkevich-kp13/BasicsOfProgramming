@@ -43,11 +43,11 @@ namespace Task1
                     result = firstNum - secondNum;
                     break;
 
-                case '*':
+                case '×':
                     result = firstNum * secondNum;
                     break;
 
-                case '/':
+                case '÷':
                     result = firstNum / secondNum;
                     break;
             }
@@ -74,149 +74,26 @@ namespace Task1
             mainWindow.Show();
         }
 
-        private void Num_0_Btn_Click(object sender, RoutedEventArgs e)
+        private void Num_Btn_Click(object sender, RoutedEventArgs e)
         {
-            if(symbol == " ")
+            Button button = (Button)sender;
+
+            if (symbol == " ")
             {
-                firstNum = firstNum == "0" ? "0" : firstNum + 0;
+                firstNum = firstNum == "0" ? Convert.ToString(button.Content) : firstNum + Convert.ToString(button.Content);
                 TextBoxPrinter(firstNum);
                 return;
             }
-            secondNum = secondNum == "0" ? "0" : secondNum + 0;
+            secondNum = secondNum == "0" ? Convert.ToString(button.Content) : secondNum + Convert.ToString(button.Content);
             TextBoxPrinter(secondNum);
         }
 
-        private void Num_1_Btn_Click(object sender, RoutedEventArgs e)
+        private void Symbol_Btn_Click(object sender, RoutedEventArgs e)
         {
-            if (symbol == " ")
-            {          
-                firstNum = firstNum == "0" ? "1" : firstNum + 1;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "1" : secondNum + 1;
-            TextBoxPrinter(secondNum);
-        }
+            Button button = (Button)sender;
 
-        private void Num_2_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol == " ")
-            {
-                firstNum = firstNum == "0" ? "2" : firstNum + 2;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "2" : secondNum + 2;
-            TextBoxPrinter(secondNum);
-        }
-
-        private void Num_3_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol == " ")
-            {
-                firstNum = firstNum == "0" ? "3" : firstNum + 3;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "3" : secondNum + 3;
-            TextBoxPrinter(secondNum);
-        }
-
-        private void Num_4_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol == " ")
-            {
-                firstNum = firstNum == "0" ? "4" : firstNum + 4;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "4" : secondNum + 4;
-            TextBoxPrinter(secondNum);
-        }
-
-        private void Num_5_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol == " ")
-            {
-                firstNum = firstNum == "0" ? "5" : firstNum + 5;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "5" : secondNum + 5;
-            TextBoxPrinter(secondNum);
-        }
-
-        private void Num_6_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol == " ")
-            {
-                firstNum = firstNum == "0" ? "6" : firstNum + 6;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "6" : secondNum + 6;
-            TextBoxPrinter(secondNum);
-        }
-        private void Num_7_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol == " ")
-            {
-                firstNum = firstNum == "0" ? "7" : firstNum + 7;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "7" : secondNum + 7;
-            TextBoxPrinter(secondNum);
-        }
-        private void Num_8_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol == " ")
-            {
-                firstNum = firstNum == "0" ? "8" : firstNum + 8;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "8" : secondNum + 8;
-            TextBoxPrinter(secondNum);
-        }
-
-        private void Num_9_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol == " ")
-            {
-                firstNum = firstNum == "0" ? "9" : firstNum + 9;
-                TextBoxPrinter(firstNum);
-                return;
-            }
-            secondNum = secondNum == "0" ? "9" : secondNum + 9;
-            TextBoxPrinter(secondNum);
-        }
-
-        private void Sym_Minus_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if(symbol != " ") { Sym_Equals_Btn_Click(sender, e); }
-            symbol = "-";
-            OperationsPrinter(firstNum, symbol);
-        }
-
-        private void Sym_Plus_Btn_Click(object sender, RoutedEventArgs e)
-        {
             if (symbol != " ") { Sym_Equals_Btn_Click(sender, e); }
-            symbol = "+";
-            OperationsPrinter(firstNum, symbol);
-        }
-
-        private void Sym_Multiply_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol != " ") { Sym_Equals_Btn_Click(sender, e); }
-            symbol = "*";
-            OperationsPrinter(firstNum, symbol);
-        }
-
-        private void Sym_Divide_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            if (symbol != " ") { Sym_Equals_Btn_Click(sender, e); }
-            symbol = "/";
+            symbol = Convert.ToString(button.Content);
             OperationsPrinter(firstNum, symbol);
         }
 

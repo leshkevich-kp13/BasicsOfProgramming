@@ -76,25 +76,25 @@
                 <Button x:Name="Clear_Btn" Grid.Column="2" Grid.Row="0" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Clear_Btn_Click">С</Button>
                 <Button x:Name="Backspace_Btn" Grid.Column="3" Grid.Row="0" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Backspace_Btn_Click">⌫</Button>
 
-                <Button x:Name="Num_7_Btn" Grid.Column="0" Grid.Row="1" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_7_Btn_Click">7</Button>
-                <Button x:Name="Num_8_Btn" Grid.Column="1" Grid.Row="1" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_8_Btn_Click">8</Button>
-                <Button x:Name="Num_9_Btn" Grid.Column="2" Grid.Row="1" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_9_Btn_Click">9</Button>
-                <Button x:Name="Sym_Divide_Btn" Grid.Column="3" Grid.Row="1" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Sym_Divide_Btn_Click">÷</Button>
+                <Button x:Name="Num_7_Btn" Grid.Column="0" Grid.Row="1" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">7</Button>
+                <Button x:Name="Num_8_Btn" Grid.Column="1" Grid.Row="1" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">8</Button>
+                <Button x:Name="Num_9_Btn" Grid.Column="2" Grid.Row="1" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">9</Button>
+                <Button x:Name="Sym_Divide_Btn" Grid.Column="3" Grid.Row="1" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Symbol_Btn_Click">÷</Button>
 
-                <Button x:Name="Num_4_Btn" Grid.Column="0" Grid.Row="2" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_4_Btn_Click">4</Button>
-                <Button x:Name="Num_5_Btn" Grid.Column="1" Grid.Row="2" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_5_Btn_Click">5</Button>
-                <Button x:Name="Num_6_Btn" Grid.Column="2" Grid.Row="2" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_6_Btn_Click">6</Button>
-                <Button x:Name="Sym_Multiply_Btn" Grid.Column="3" Grid.Row="2" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Sym_Multiply_Btn_Click">×</Button>
+                <Button x:Name="Num_4_Btn" Grid.Column="0" Grid.Row="2" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">4</Button>
+                <Button x:Name="Num_5_Btn" Grid.Column="1" Grid.Row="2" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">5</Button>
+                <Button x:Name="Num_6_Btn" Grid.Column="2" Grid.Row="2" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">6</Button>
+                <Button x:Name="Sym_Multiply_Btn" Grid.Column="3" Grid.Row="2" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Symbol_Btn_Click">×</Button>
 
-                <Button x:Name="Num_1_Btn" Grid.Column="0" Grid.Row="3" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_1_Btn_Click">1</Button>
-                <Button x:Name="Num_2_Btn" Grid.Column="1" Grid.Row="3" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_2_Btn_Click">2</Button>
-                <Button x:Name="Num_3_Btn" Grid.Column="2" Grid.Row="3" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_3_Btn_Click">3</Button>
-                <Button x:Name="Sym_Minus_Btn" Grid.Column="3" Grid.Row="3" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Sym_Minus_Btn_Click">-</Button>
+                <Button x:Name="Num_1_Btn" Grid.Column="0" Grid.Row="3" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">1</Button>
+                <Button x:Name="Num_2_Btn" Grid.Column="1" Grid.Row="3" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">2</Button>
+                <Button x:Name="Num_3_Btn" Grid.Column="2" Grid.Row="3" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">3</Button>
+                <Button x:Name="Sym_Minus_Btn" Grid.Column="3" Grid.Row="3" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Symbol_Btn_Click">-</Button>
 
                 <Button x:Name="ChangeSign_Btn" Grid.Column="0" Grid.Row="4" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="ChangeSign_Btn_Click">±</Button>
-                <Button x:Name="Num_0_Btn" Grid.Column="1" Grid.Row="4" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_0_Btn_Click">0</Button>
+                <Button x:Name="Num_0_Btn" Grid.Column="1" Grid.Row="4" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Num_Btn_Click">0</Button>
                 <Button x:Name="Comma_Btn" Grid.Column="2" Grid.Row="4" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Comma_Btn_Click">,</Button>
-                <Button x:Name="Sym_Plus_Btn" Grid.Column="3" Grid.Row="4" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Sym_Plus_Btn_Click">+</Button>
+                <Button x:Name="Sym_Plus_Btn" Grid.Column="3" Grid.Row="4" Background="Green" Foreground="White" FontFamily="Segoe Print" FontSize="30" Click="Symbol_Btn_Click">+</Button>
 
 
             </Grid>
