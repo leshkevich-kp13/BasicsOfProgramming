@@ -296,7 +296,7 @@ namespace Task1
             {
                 AnalyseFirstDiagonal();
             }
-            else if((x + y) == 4)
+            if((x + y) == 4)
             {
                 AnalyseSecondDiagonal();
             }
