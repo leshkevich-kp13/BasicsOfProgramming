@@ -1,0 +1,28 @@
+﻿<Window x:Class="KeystrokeDynamicsAuthentication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeystrokeDynamicsAuthentication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="450">
+    <Grid Background="#FF76E7F7">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Label FontSize="24" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center">Keystroke Dynamics Authentication</Label>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="LearningMode_Btn" Grid.Row="1" Grid.Column="0" Margin="10" FontSize="18" FontWeight="Bold" Click="Button_Click">Learning Mode</Button>
+            <Button x:Name="AuthenticationMode_Btn" Grid.Row="1" Grid.Column="1" Margin="10" FontSize="18" FontWeight="Bold" Click="AuthenticationMode_Btn_Click">Authentication mode</Button>
+        </Grid>
+        
+    </Grid>
+    
+</Window>

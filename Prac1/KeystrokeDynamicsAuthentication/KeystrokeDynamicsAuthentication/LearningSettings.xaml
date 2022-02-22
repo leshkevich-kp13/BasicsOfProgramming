@@ -1,0 +1,48 @@
+﻿<Window x:Class="KeystrokeDynamicsAuthentication.LearningSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeystrokeDynamicsAuthentication"
+        mc:Ignorable="d"
+        Title="LearningSettings" Height="350" Width="400">
+    <Grid Background="#FF63FFF7">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="1" FontFamily="Calibri" FontSize="44" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">Learning Settings</Label>
+        <Label Grid.Row="1" Grid.Column="1" FontFamily="Calibri" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">Codeword (7-12 symbols)</Label>
+        <TextBox x:Name="InputWord_TextBox" Grid.Row="2" Grid.Column="1" FontFamily="Calibri" FontSize="24" Margin="15" VerticalContentAlignment="Center"></TextBox>
+
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="1" Grid.Column="0" FontFamily="Calibri" FontSize="30" FontWeight="Bold" VerticalAlignment="Center">Number of attempts:</Label>
+            <ComboBox x:Name="NumOfAttemps_ComboBox" Grid.Column="1" VerticalContentAlignment="Center" FontSize="18" Margin="9.6,20,9.6,10"></ComboBox>
+        </Grid>
+
+
+        <Grid Grid.Row="4" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="ApplySettings_Btn" Grid.Column="0" FontFamily="Calibri" FontSize="24" FontWeight="Bold" Margin="8" Click="ApplySettings_Btn_Click">Apply Settings</Button>
+            <Button x:Name="MainWindow_Btn" Grid.Column="1" FontFamily="Calibri" FontSize="24" FontWeight="Bold" Margin="8" Click="MainWindow_Btn_Click">Main Window</Button>
+        </Grid>
+    </Grid>
+</Window>
