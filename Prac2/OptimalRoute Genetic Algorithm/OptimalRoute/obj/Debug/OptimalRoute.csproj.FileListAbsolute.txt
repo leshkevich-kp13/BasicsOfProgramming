@@ -1,0 +1,15 @@
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute.csproj.AssemblyReference.cache
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\MainWindow.g.cs
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\App.g.cs
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute_MarkupCompile.cache
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute_MarkupCompile.lref
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\bin\Debug\OptimalRoute.exe.config
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\bin\Debug\OptimalRoute.exe
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\bin\Debug\OptimalRoute.pdb
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\MainWindow.baml
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute.g.resources
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute.Properties.Resources.resources
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute.csproj.GenerateResource.cache
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute.csproj.CoreCompileInputs.cache
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute.exe
+E:\ProgrammingLabs\Sem2\Prac_2\OptimalRoute\OptimalRoute\obj\Debug\OptimalRoute.pdb

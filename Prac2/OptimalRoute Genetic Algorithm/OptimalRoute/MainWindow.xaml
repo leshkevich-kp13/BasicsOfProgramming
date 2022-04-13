@@ -1,0 +1,94 @@
+﻿<Window x:Name="MainWin" x:Class="OptimalRoute.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OptimalRoute"
+        mc:Ignorable="d"
+        Title="Traveling Salesman Problem" Height="650" Width="1000" Icon="chromosome.png">
+    <Grid x:Name="mainGrid" ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas  Grid.Row="0" Grid.Column="0" x:Name="mainCanvas" HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Top"/>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" FontSize="20">Number of points</Label>
+            <Label Grid.Row="2" FontSize="20">Population Dimension</Label>
+            <Label Grid.Row="4" FontSize="20">Mutation Probability %</Label>
+            <Label Grid.Row="6" FontSize="20">Number of iterations</Label>
+            <Label Grid.Row="8" FontSize="20">Speed (ms)</Label>
+            <Label Grid.Row="10" FontSize="20">Current iteration:</Label>
+            <Label x:Name="CurrentIteration_Label" Grid.Row="11" FontSize="20"></Label>
+            <Label Grid.Row="12" FontSize="20">Length of current route:</Label>
+            <Label x:Name="CurrentLength_Label" Grid.Row="13" FontSize="20"></Label>
+
+            <ComboBox x:Name="numOfPointsCB" Grid.Row="1" SelectedIndex="0" SelectionChanged="NumOfPointsCB_SelectionChanged" FontFamily="Book Antiqua" FontSize="20" Margin="5">
+                <ListBoxItem Content="5" />
+                <ListBoxItem Content="10"/>
+                <ListBoxItem Content="20"/>
+                <ListBoxItem Content="50"/>
+                <ListBoxItem Content="100"/>
+                <ListBoxItem Content="200"/>
+                <ListBoxItem Content="500"/>
+            </ComboBox>
+            <ComboBox x:Name="populationDimensionCB" Grid.Row="3" SelectedIndex="0" SelectionChanged="PopulationDimensionCB_SelectionChanged" FontFamily="Book Antiqua" FontSize="20" Margin="5">
+                <ListBoxItem Content="5" />
+                <ListBoxItem Content="10" />
+                <ListBoxItem Content="20" />
+                <ListBoxItem Content="30"/>
+                <ListBoxItem Content="40"/>
+                <ListBoxItem Content="50"/>
+            </ComboBox>
+            <ComboBox x:Name="mutatuionProbabilityCB" Grid.Row="5" SelectedIndex="0" SelectionChanged="MutatuionProbabilityCB_SelectionChanged" FontFamily="Book Antiqua" FontSize="20" Margin="5">
+                <ListBoxItem Content="10" />
+                <ListBoxItem Content="20" />
+                <ListBoxItem Content="30"/>
+                <ListBoxItem Content="40"/>
+                <ListBoxItem Content="50"/>
+                <ListBoxItem Content="60"/>
+                <ListBoxItem Content="70"/>
+                <ListBoxItem Content="80"/>
+                <ListBoxItem Content="90"/>
+                <ListBoxItem Content="100"/>
+            </ComboBox>
+            <ComboBox x:Name="numberOfIterationsCB" Grid.Row="7" SelectedIndex="0" SelectionChanged="NumberOfIterationsCB_SelectionChanged" FontFamily="Book Antiqua" FontSize="20" Margin="5">
+                <ListBoxItem Content="200" />
+                <ListBoxItem Content="500" />
+                <ListBoxItem Content="1000"/>
+                <ListBoxItem Content="5000"/>
+                <ListBoxItem Content="10000"/>
+            </ComboBox>
+            <ComboBox x:Name="speedCB" Grid.Row="9" SelectedIndex="0" SelectionChanged="SpeedCB_SelectionChanged" FontFamily="Book Antiqua" FontSize="20" Margin="5">
+                <ListBoxItem Content="1000" />
+                <ListBoxItem Content="500"/>
+                <ListBoxItem Content="200"/>
+                <ListBoxItem Content="100"/>
+                <ListBoxItem Content="50"/>
+                <ListBoxItem Content="10"/>
+                <ListBoxItem Content="5"/>
+                <ListBoxItem Content="1"/>
+            </ComboBox>
+            <Button x:Name ="generatePointsBtn" Grid.Row="14" Click="GeneratePointsBtn_Click" FontSize="20" Margin="5">Generate points</Button>
+            <Button x:Name ="stopStartBtn" Grid.Row="15" Click="StopStartBtn_Click" FontSize="20" Margin="5">Start/Stop</Button>
+        </Grid>
+    </Grid>
+</Window>
