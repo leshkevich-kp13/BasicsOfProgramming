@@ -1,0 +1,16 @@
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5.csproj.AssemblyReference.cache
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5.csproj.SuggestedBindingRedirects.cache
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\MainWindow.g.cs
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\App.g.cs
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5_MarkupCompile.cache
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5_MarkupCompile.lref
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5.exe
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5.pdb
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\bin\Debug\Lab5.exe.config
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\bin\Debug\Lab5.exe
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\bin\Debug\Lab5.pdb
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\MainWindow.baml
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5.g.resources
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5.Properties.Resources.resources
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5.csproj.GenerateResource.cache
+E:\ProgrammingLabs\Sem2\Lab5\Lab5\Lab5\obj\Debug\Lab5.csproj.CoreCompileInputs.cache

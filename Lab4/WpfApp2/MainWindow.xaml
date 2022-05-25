@@ -13,7 +13,7 @@
         <DataGrid x:Name="MarksDG" Margin="707,516,9.6,10.4"/>
         <Label Content="Абітурієнти" FontSize="18" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="684" Height="39"/>
         <Label Content="Розклад консультацій та екзаменів" FontSize="18" HorizontalAlignment="Left" Margin="707,10,0,0" VerticalAlignment="Top" Width="677" Height="39"/>
-        <Label Content="Оцінки абітурієнтів" FontSize="18" HorizontalAlignment="Left" Margin="707,471,0,0" VerticalAlignment="Top" Width="291" Height="40"/>
+        <Label Content="Оцінки абітурієнтів (більші 9)" FontSize="18" HorizontalAlignment="Left" Margin="707,471,0,0" VerticalAlignment="Top" Width="291" Height="40"/>
         <Label Content="Факультети та кафедри" FontSize="18" HorizontalAlignment="Left" Margin="707,293,0,0" VerticalAlignment="Top" Width="381" Height="40"/>
 
     </Grid>
