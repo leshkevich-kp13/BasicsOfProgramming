@@ -1,0 +1,75 @@
+﻿<Page x:Class="UniversityAdmissionCommittee.DetailedApplicantInfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UniversityAdmissionCommittee"
+      mc:Ignorable="d" 
+      d:DesignHeight="670" d:DesignWidth="340"
+      Title="DetailedInfoPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">ID:</Label>
+        <Label Grid.Row="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Прізвище:</Label>
+        <Label Grid.Row="2" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Ім'я:</Label>
+        <Label Grid.Row="3" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">По батькові:</Label>
+        <Label Grid.Row="4" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Паспортні дані:</Label>
+        <Label Grid.Row="5" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Навчальний заклад:</Label>
+        <Label Grid.Row="6" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Дата закінчення:</Label>
+        <Label Grid.Row="7" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Медаль:</Label>
+        <Label Grid.Row="8" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Факультет:</Label>
+        <Label Grid.Row="9" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Кафедра:</Label>
+        <Label Grid.Row="10" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Група:</Label>
+        <Label Grid.Row="11" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.ColumnSpan="2" Width="236">Розклад консультацій (каб./дата)):</Label>
+        <TextBlock x:Name="firstSubject1TextBlock" Grid.Row="12" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+        <TextBlock x:Name="secondSubject1TextBlock" Grid.Row="13" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+        <TextBlock x:Name="thirdSubject1TextBlock" Grid.Row="14" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+        <Label Grid.Row="15" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.ColumnSpan="2" Width="211">Розклад екзаменів (каб./дата)):</Label>
+        <TextBlock x:Name="firstSubject2TextBlock" Grid.Row="16" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+        <TextBlock x:Name="secondSubject2TextBlock" Grid.Row="17" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+        <TextBlock x:Name="thirdSubject2TextBlock" Grid.Row="18" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+
+        <TextBlock x:Name="idApplicantTextBlock" Grid.Row="0" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="surnameTextBlock" Grid.Row="1" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="nameTextBlock" Grid.Row="2" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="middleNameTextBlock" Grid.Row="3" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="passportDataTextBlock" Grid.Row="4" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="educationInstitutonTextBlock" Grid.Row="5" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="graduationDateTextBlock" Grid.Row="6" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="medalTextBlock" Grid.Row="7" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="facultyTextBlock" Grid.Row="8" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="departmentTextBlock" Grid.Row="9" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="groupTextBlock" Grid.Row="10" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="firstSubjectConsultationTextBlock" Grid.Row="12" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="secondSubjectConsultationTextBlock" Grid.Row="13" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="thirdSubjectConsultationTextBlock" Grid.Row="14" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="firstSubjectExamTextBlock" Grid.Row="16" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="secondSubjectExamTextBlock" Grid.Row="17" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+        <TextBlock x:Name="thirdSubjectExamTextBlock" Grid.Row="18" Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap"></TextBlock>
+    </Grid>
+</Page>

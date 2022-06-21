@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{840F4D67-F24F-46FA-99FE-0EC649484A8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UniversityAdmissionCommittee</RootNamespace>
+    <AssemblyName>UniversityAdmissionCommittee</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddWindows\AddNEditApplicantWindow.xaml.cs">
+      <DependentUpon>AddNEditApplicantWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddWindows\AddNEditDepartmentWindow.xaml.cs">
+      <DependentUpon>AddNEditDepartmentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddWindows\AddNEditFacultyWindowWindow.xaml.cs">
+      <DependentUpon>AddNEditFacultyWindowWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPages\DetailedApplicantInfoPage.xaml.cs">
+      <DependentUpon>DetailedApplicantInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPages\DetailedDepartmentInfoPage.xaml.cs">
+      <DependentUpon>DetailedDepartmentInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddWindows\EditScheduleWindow.xaml.cs">
+      <DependentUpon>EditScheduleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFrames\SearchEnlistedApplicantsPage.xaml.cs">
+      <DependentUpon>SearchEnlistedApplicantsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFrames\SearchApplicantPage.xaml.cs">
+      <DependentUpon>SearchApplicantPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFrames\SearchDepartmentPage.xaml.cs">
+      <DependentUpon>SearchDepartmentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFrames\SearchSchedulePage.xaml.cs">
+      <DependentUpon>SearchSchedulePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFrames\SearchMarksPage.xaml.cs">
+      <DependentUpon>SearchMarksPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SQLQueries\SQLInsertQueries.cs" />
+    <Compile Include="SQLQueries\SQLSelectQueries.cs" />
+    <Compile Include="SQLQueries\SQLUpdateQueries.cs" />
+    <Page Include="AddWindows\AddNEditApplicantWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddWindows\AddNEditDepartmentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddWindows\AddNEditFacultyWindowWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoPages\DetailedApplicantInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoPages\DetailedDepartmentInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddWindows\EditScheduleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="SearchFrames\SearchEnlistedApplicantsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchFrames\SearchApplicantPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchFrames\SearchDepartmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchFrames\SearchSchedulePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchFrames\SearchMarksPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AddWindows\mainicon %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

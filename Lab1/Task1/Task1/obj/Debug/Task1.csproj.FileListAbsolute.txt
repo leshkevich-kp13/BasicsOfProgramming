@@ -73,3 +73,4 @@ E:\ProgrammingGit\BasicsOfProgramming\Lab1\Task1\Task1\obj\Debug\Task1.csproj.Ge
 E:\ProgrammingGit\BasicsOfProgramming\Lab1\Task1\Task1\obj\Debug\Task1.csproj.CoreCompileInputs.cache
 E:\ProgrammingGit\BasicsOfProgramming\Lab1\Task1\Task1\obj\Debug\Task1.exe
 E:\ProgrammingGit\BasicsOfProgramming\Lab1\Task1\Task1\obj\Debug\Task1.pdb
+E:\ProgrammingGit\BasicsOfProgramming\Lab1\Task1\Task1\obj\Debug\Task1.csproj.SuggestedBindingRedirects.cache

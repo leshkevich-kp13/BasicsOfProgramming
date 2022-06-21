@@ -1,0 +1,55 @@
+﻿<Page x:Class="UniversityAdmissionCommittee.SearchApplicantPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UniversityAdmissionCommittee"
+      mc:Ignorable="d" 
+      d:DesignHeight="120" d:DesignWidth="850"
+      Title="SearchPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="110*"/>
+                <ColumnDefinition Width="110*"/>
+                <ColumnDefinition Width="110*"/>
+                <ColumnDefinition Width="450*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" >ID</Label>
+            <Label Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" >Прізвище</Label>
+            <Label Grid.Column="2" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" >Ім'я</Label>
+            <Label Grid.Column="3" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" >По батькові</Label>
+            <Label Grid.Column="4" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" >Факультет</Label>
+            <TextBox x:Name="idApplicantTextBox" Grid.Row="1" Grid.Column="0" FontSize="14" VerticalAlignment="Center" Margin="3"></TextBox>
+            <TextBox x:Name="surnameTextBox" Grid.Row="1" Grid.Column="1" FontSize="14" VerticalAlignment="Center" Margin="3"></TextBox>
+            <TextBox x:Name="nameTextBox" Grid.Row="1" Grid.Column="2" FontSize="14" VerticalAlignment="Center" Margin="3"></TextBox>
+            <TextBox x:Name="middleNameTextBox" Grid.Row="1" Grid.Column="3" FontSize="14" VerticalAlignment="Center" Margin="3"></TextBox>
+            <ComboBox x:Name="facultyNameComboBox" Grid.Row="1" Grid.Column="4" FontSize="14" VerticalAlignment="Center" IsReadOnly="False" IsEditable="True" IsTextSearchEnabled="True" Margin="3" SelectionChanged="FacultyNameComboBox_SelectionChanged"></ComboBox>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180*"/>
+                <ColumnDefinition Width="560*"/>
+                <ColumnDefinition Width="110*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Кафедра</Label>
+            <Label Grid.Column="3" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left">Група</Label>
+            <ComboBox x:Name="departmentNameComboBox" Grid.Row="1" Grid.Column="1" FontSize="14" VerticalAlignment="Center" IsReadOnly="False" IsEditable="True" IsTextSearchEnabled="True" Margin="3,0,3,0" SelectionChanged="DepartmentNameComboBox_SelectionChanged"></ComboBox>
+            <ComboBox x:Name="groupNameComboBox" Grid.Row="1" Grid.Column="3" FontSize="14" VerticalAlignment="Center" IsReadOnly="False" IsEditable="True" IsTextSearchEnabled="True" Margin="3,0,3,0"></ComboBox>
+        </Grid>
+    </Grid>
+</Page>
